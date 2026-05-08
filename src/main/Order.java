@@ -5,10 +5,20 @@ public class Order {
     private Customer customer;
     private List<Item> items;
 
-    public Order(Customer customer, List<Item> items) {
+    // NEW FIELD
+    private double totalAmount;
+
+    public Order(
+            Customer customer,
+            List<Item> items,
+            double totalAmount
+    ) {
 
         this.customer = customer;
         this.items = items;
+
+        // NEW
+        this.totalAmount = totalAmount;
     }
 
     public Customer getCustomer() {
@@ -17,5 +27,10 @@ public class Order {
 
     public List<Item> getItems() {
         return items;
+    }
+
+    // NEW METHOD
+    public double getTotalAmount() {
+        return totalAmount;
     }
 }

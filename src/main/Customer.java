@@ -16,4 +16,9 @@ public class Customer {
     public boolean isMember() {
         return member;
     }
+
+    // NEW METHOD
+    public boolean isPremium() {
+        return member;
+    }
 }
