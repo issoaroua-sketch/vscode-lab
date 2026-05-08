@@ -1,14 +1,18 @@
 public class Calculator {
 
-    public double calc(double a, double b) {
+    public double calculateSumProductRatio(
+            double num1,
+            double num2
+    ) {
 
-        double x = a + b;
-        double y = a * b;
+        double sum = num1 + num2;
+        double product = num1 * num2;
 
-        return x / y;
+        return sum / product;
     }
 
-    public void prtRes(double res) {
-        System.out.println("Result: " + res);
+    public void printResult(double result) {
+
+        System.out.println("Result: " + result);
     }
 }
